@@ -12,7 +12,7 @@ TIMEZONE = 'Europe/Brussels'
 
 DEFAULT_LANG = u'en'
 
-THEME = "~/pelican-themes/nest"
+THEME = "/home/andy/pelican-themes/flex"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
