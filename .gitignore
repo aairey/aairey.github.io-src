@@ -1,0 +1,7 @@
+*.pyc
+.gitignore~
+..gitignore.un~
+.pelicanconf.py.un~
+.publishconf.py.un~
+pelicanconf.py~
+publishconf.py~
