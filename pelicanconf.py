@@ -12,7 +12,7 @@ TIMEZONE = 'Europe/Brussels'
 
 DEFAULT_LANG = u'en'
 
-THEME = "/home/andy/pelican-themes/flex"
+THEME = "./pelican-themes/flex"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
@@ -27,7 +27,7 @@ LINKS = (('Utopit', 'http://www.utopit.be/'),)
 # Social widget
 SOCIAL = (('twitter', 'https://twitter.com/a_airey'),
           ('linkedin', 'https://be.linkedin.com/in/andyairey'),
-          ('google', 'https://plus.google.com/u/0/+AndyAire'),
+          ('google', 'https://plus.google.com/u/0/+AndyAirey'),
           ('github', 'https://github.com/aairey'),
 	  ('rss', 'http://aairey.github.io/feeds/all.atom.xml'),)
 
@@ -39,7 +39,7 @@ DEFAULT_PAGINATION = 10
 
 # Flex theme settings
 SITETITLE = AUTHOR
-SITESUBTITLE = u'System Engineer'
+SITESUBTITLE = u'Systems Engineer'
 SITEDESCRIPTION = u'%s\'s Thoughts and Writings' % AUTHOR
 SITELOGO = u'//en.gravatar.com/userimage/33572940/d1226e18865ebdb31edc84661c5abaa3.jpeg'
 FAVICON = SITEURL + '/images/favicon.ico'
@@ -56,7 +56,7 @@ MENUITEMS = (('Archives', '/archives.html'),
 COPYRIGHT_YEAR = 2016
 
 # plugins
-PLUGIN_PATHS = ['/home/andy/pelican-plugins']
+PLUGIN_PATHS = ['./pelican-plugins']
 PLUGINS = ['gravatar', 'sitemap']
 
 AUTHOR_EMAIL = 'airey.andy@gmail.com'
