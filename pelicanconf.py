@@ -5,7 +5,7 @@ import os
 
 AUTHOR = u'Andy Airey'
 SITENAME = u'aairey.github.io'
-SITEURL = 'aairey.github.io'
+SITEURL = 'http://aairey.github.io'
 
 PATH = 'content'
 
