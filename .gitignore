@@ -3,3 +3,4 @@
 .gitignore~
 pelicanconf.py~
 publishconf.py~
+env.sh

@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
 
 AUTHOR = u'Andy Airey'
 SITENAME = u'aairey.github.io'
@@ -44,7 +45,7 @@ SITEDESCRIPTION = u'%s\'s Thoughts and Writings' % AUTHOR
 SITELOGO = u'//en.gravatar.com/userimage/33572940/d1226e18865ebdb31edc84661c5abaa3.jpeg'
 FAVICON = SITEURL + '/images/favicon.ico'
 BROWSER_COLOR = '#333333'
-PYGMENTS_STYLE = 'monokai'
+PYGMENTS_STYLE = 'native'
 
 USE_FOLDER_AS_CATEGORY = True
 MAIN_MENU = True
@@ -57,7 +58,7 @@ COPYRIGHT_YEAR = 2016
 
 # plugins
 PLUGIN_PATHS = ['./pelican-plugins']
-PLUGINS = ['gravatar', 'sitemap']
+PLUGINS = ['gravatar', 'sitemap', 'disqus_static']
 
 AUTHOR_EMAIL = 'airey.andy@gmail.com'
 
@@ -74,3 +75,20 @@ SITEMAP = {
         'pages': 'monthly',
     }
 }
+
+DISQUS_SITENAME = u'aaireygithubio'
+DISQUS_SECRET_KEY = os.environ.get('DISQUS_SECRET_KEY')
+DISQUS_PUBLIC_KEY = os.environ.get('DISQUS_PUBLIC_KEY')
+
+# custom solarized CSS
+# tell pelican where your solarized-dark.css file is in your content folder
+STATIC_PATHS = ['extras/solarized-dark.css']
+
+# tell pelican where it should copy that file to in your output folder
+EXTRA_PATH_METADATA = {
+'extras/solarized-dark.css': {'path': 'static/solarized-dark.css'}
+}
+
+# tell the pelican-bootstrap-3 theme where to find the solarized-dark.css file in your output folder
+CUSTOM_CSS = 'static/solarized-dark.css'
+
