@@ -1,6 +1,7 @@
 *.pyc
 *.un~
 .gitignore~
+*.pid
 pelicanconf.py~
 publishconf.py~
 env.sh
