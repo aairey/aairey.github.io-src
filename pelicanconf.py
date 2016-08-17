@@ -13,7 +13,7 @@ TIMEZONE = 'Europe/Brussels'
 
 DEFAULT_LANG = u'en'
 
-THEME = "./pelican-themes/flex"
+THEME = "./pelican-themes/Flex"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
