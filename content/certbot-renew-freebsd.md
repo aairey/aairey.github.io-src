@@ -1,6 +1,6 @@
 Title: certbot renew on FreeBSD
 Date: 2016-08-17 22:27
-Modified: 2016-08-17 22:58
+Modified: 2016-08-17 23:30
 Category: homelab
 Tags: owncloud, security, letsencrypt, freenas, cerbot, jails
 Slug: certbot-renew-freebsd
@@ -10,7 +10,7 @@ Summary: A small post on how to renew a LetsEncrypt certificate in a FreeBSD jai
 Hi there,
 
 
-In {my last post}letsencrypt-owncloud I talked about getting a free certificate fron [LetsEncrypt](https://letsencrypt.org/) using py27-letsencrypt.
+In [my last post](../owncloud-letsencrypt) I talked about getting a free certificate fron [LetsEncrypt](https://letsencrypt.org/) using py27-letsencrypt.
 
 Turns out I was not using the right package for the job.
 The package [certbot](https://certbot.eff.org/docs/using.html) is available now and this (also Python) is used in favor of `py27-letsencrypt`.
@@ -141,8 +141,8 @@ This is not a production server so I wrapped it with these hooks (as recommended
 The dry-run was succesful! (in retrospect - could've done this with the original `py27-letsencrypt` too ...)
 Finally, I set up crontab to take care of this for me in the future:
 
-    0 3 1 */3 * certbot renew --standalone --pre-hook "/usr/pbi/owncloud-amd64/etc/rc.d/apache24 stop" --post-hook "/usr/
-pbi/owncloud-amd64/etc/rc.d/apache24 start"
+    0 3 1 */3 * certbot renew --standalone --pre-hook "/usr/pbi/owncloud-amd64/etc/rc.d/apache24 stop" --post-hook "/usr/pbi/owncloud-amd64/etc/rc.d/apache24 start"
 
-This will check and renew the cert every 3 (1st of Jan, Apr, Jul, Oct). 
+This will check and renew the cert every 3 (1st of Jan, Apr, Jul, Oct).
+
 Future-you will thank you!
