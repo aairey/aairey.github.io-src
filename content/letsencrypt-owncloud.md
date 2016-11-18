@@ -47,10 +47,10 @@ Here's how I did it.
         ln -s /usr/local/etc/letsencrypt/live/your.domain.org/privkey.pem letsencrypt.key
         ln -s /usr/local/etc/letsencrypt/live/your.domain.org/chain.pem letsencrypt_chain.crt
 
-5. edit extra/httpd-ssl.conf and change it so that
+5. edit `extra/httpd-ssl.conf` and change it so that
 
         #!apache
-        SSLProtocol all -SSLv2 -SSLv3`
+        SSLProtocol all -SSLv2 -SSLv3
         SSLHonorCipherOrder on
         SSLCipherSuite "EECDH+ECDSA+AESGCM EECDH+aRSA+AESGCM EECDH+ECDSA+SHA384 EECDH+ECDSA+SHA256 EECDH+aRSA+SHA384 EECDH+aRSA+SHA256 EECDH+aRSA+RC4 EECDH EDH+aRSA RC4 !aNULL !eNULL !LOW !3DES !MD5 !EXP !PSK !SRP !DSS"
         

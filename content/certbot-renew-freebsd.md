@@ -141,7 +141,7 @@ This is not a production server so I wrapped it with these hooks (as recommended
 The dry-run was succesful! (in retrospect - could've done this with the original `py27-letsencrypt` too ...)
 Finally, I set up crontab to take care of this for me in the future:
 
-    0 3 1 */3 * certbot renew --standalone --pre-hook "/usr/pbi/owncloud-amd64/etc/rc.d/apache24 stop" --post-hook "/usr/pbi/owncloud-amd64/etc/rc.d/apache24 start"
+    0 3 1 */3 * root certbot renew --standalone --pre-hook "/usr/pbi/owncloud-amd64/etc/rc.d/apache24 stop" --post-hook "/usr/pbi/owncloud-amd64/etc/rc.d/apache24 start"
 
 This will check and renew the cert every 3 (1st of Jan, Apr, Jul, Oct).
 
