@@ -4,8 +4,8 @@ from __future__ import unicode_literals
 import os
 
 AUTHOR = u'Andy Airey'
-SITENAME = u'aairey.github.io'
-SITEURL = 'http://aairey.github.io'
+SITENAME = u'blog.airey.be'
+SITEURL = 'http://blog.airey.be'
 
 PATH = 'content'
 
@@ -23,7 +23,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Utopit', 'http://www.utopit.be/'),)
+LINKS = (('TowerLAN', 'http://www.towerlan.be/'),)
 
 # Social widget
 SOCIAL = (('twitter', 'https://twitter.com/a_airey'),
@@ -40,7 +40,7 @@ DEFAULT_PAGINATION = 10
 
 # Flex theme settings
 SITETITLE = AUTHOR
-SITESUBTITLE = u'Systems Engineer'
+SITESUBTITLE = u'sysadmin'
 SITEDESCRIPTION = u'%s\'s Thoughts and Writings' % AUTHOR
 SITELOGO = u'//en.gravatar.com/userimage/33572940/d1226e18865ebdb31edc84661c5abaa3.jpeg'
 FAVICON = SITEURL + '/images/favicon.ico'
