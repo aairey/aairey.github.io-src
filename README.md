@@ -1,6 +1,10 @@
 # aairey.github.io-src
 Source for the website at [aairey.github.io](http://aairey.github.io).
 
+## Dependencies
+
+Tested with Pelican v3.7.1.
+
 ## Installing
 
     cd ~/git_projects
