@@ -30,7 +30,7 @@ SOCIAL = (('twitter', 'https://twitter.com/a_airey'),
           ('linkedin', 'https://be.linkedin.com/in/andyairey'),
           ('google', 'https://plus.google.com/u/0/+AndyAirey'),
           ('github', 'https://github.com/aairey'),
-	  ('rss', 'http://aairey.github.io/feeds/all.atom.xml'),)
+	  ('rss', 'https://blog.airey.be/feeds/all.atom.xml'),)
 
 DEFAULT_PAGINATION = 10
 
@@ -82,11 +82,12 @@ DISQUS_PUBLIC_KEY = os.environ.get('DISQUS_PUBLIC_KEY')
 
 # custom solarized CSS
 # tell pelican where your solarized-dark.css file is in your content folder
-STATIC_PATHS = ['extras/solarized-dark.css']
+STATIC_PATHS = ['extras/solarized-dark.css', 'extras/CNAME']
 
 # tell pelican where it should copy that file to in your output folder
 EXTRA_PATH_METADATA = {
-'extras/solarized-dark.css': {'path': 'static/solarized-dark.css'}
+'extras/solarized-dark.css': {'path': 'static/solarized-dark.css'},
+'extras/CNAME': {'path': 'CNAME'},
 }
 
 # tell the pelican-bootstrap-3 theme where to find the solarized-dark.css file in your output folder

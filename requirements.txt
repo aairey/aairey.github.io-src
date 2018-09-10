@@ -1,3 +1,4 @@
 disqus-python==0.4.2
+ghp-import=0.5.5
 Markdown==2.6.11
 pelican==3.7.1
