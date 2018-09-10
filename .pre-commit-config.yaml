@@ -1,0 +1,12 @@
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks.git
+  sha: v1.2.3
+  hooks:
+    - id: detect-aws-credentials
+    - id: detect-private-key
+    - id: requirements-txt-fixer
+- repo: https://github.com/amperser/proselint.git
+  sha: 0.10.2
+  hooks:
+    - id: proselint
+      files: 'content/*.md'
