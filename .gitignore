@@ -5,4 +5,4 @@
 pelicanconf.py~
 publishconf.py~
 env.sh
-.output/
+output/

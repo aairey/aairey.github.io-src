@@ -5,7 +5,8 @@ import os
 
 AUTHOR = u'Andy Airey'
 SITENAME = u'blog.airey.be'
-SITEURL = 'https://blog.airey.be'
+SITEURL = 'http://localhost:8000'
+RELATIVE_URLS = True
 
 PATH = 'content'
 
@@ -54,13 +55,11 @@ MENUITEMS = (('Archives', '/archives.html'),
 	     ('Categories', '/categories.html'),
              ('Tags', '/tags.html'),)
 
-COPYRIGHT_YEAR = 2016
+COPYRIGHT_YEAR = 2018
 
 # plugins
 PLUGIN_PATHS = ['./pelican-plugins']
-PLUGINS = ['gravatar', 'sitemap', 'disqus_static']
-
-AUTHOR_EMAIL = 'airey.andy@gmail.com'
+PLUGINS = ['sitemap', 'disqus_static']
 
 SITEMAP = {
     'format': 'xml',
@@ -76,13 +75,15 @@ SITEMAP = {
     }
 }
 
+TYPOGRIFY = True
+
 DISQUS_SITENAME = u'aaireygithubio'
 DISQUS_SECRET_KEY = os.environ.get('DISQUS_SECRET_KEY')
 DISQUS_PUBLIC_KEY = os.environ.get('DISQUS_PUBLIC_KEY')
 
 # custom solarized CSS
 # tell pelican where your solarized-dark.css file is in your content folder
-STATIC_PATHS = ['extras/solarized-dark.css', 'extras/CNAME']
+STATIC_PATHS = ['images', 'extras/solarized-dark.css', 'extras/CNAME']
 
 # tell pelican where it should copy that file to in your output folder
 EXTRA_PATH_METADATA = {
