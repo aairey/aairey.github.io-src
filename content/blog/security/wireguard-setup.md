@@ -1,11 +1,13 @@
 Title: Wireguard Setup on Fedora
 Date: 2018-09-10 21:49
-Modified: 2018-09-10 23:06
-Category: homelab
+Modified: 2018-09-11 23:11
+Category: security
 Tags: fedora, security, vpn
 Slug: wireguard-setup
 Authors: Andy Airey
 Summary: How To setup and use Wireguard on Fedora Workstation as client and Fedora Server as PtP and VPN server. Also covers the setup on Android
+
+![WireGueard logo](images/wireguard.png)
 
 Ever since Linus Torvalds [praised](http://lkml.iu.edu/hypermail/linux/kernel/1808.0/02472.html) Wireguard, I've been wanting to try it out.  
 Last week I finally got around to play with it, and boy was it easy and elegant to set up.
