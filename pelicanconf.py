@@ -37,6 +37,7 @@ SOCIAL = (('twitter', 'https://twitter.com/a_airey'),
           ('google', 'https://plus.google.com/u/0/+AndyAirey'),
           ('github', 'https://github.com/aairey'),
 	  ('rss', 'https://blog.airey.be/feeds/all.atom.xml'),)
+ROBOTS = 'index, follow'
 
 DEFAULT_PAGINATION = 10
 
