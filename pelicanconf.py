@@ -12,11 +12,9 @@ STATIC_PATHS = ['images', 'extras']
 ARTICLE_PATHS = ['blog']
 PAGE_PATHS = ['pages']
 EXTRA_PATH_METADATA = {
-'extras/solarized-dark.css': {'path': 'static/solarized-dark.css'},
 'extras/CNAME': {'path': 'CNAME'},
 }
-# tell the pelican-bootstrap-3 theme where to find the solarized-dark.css file in your output folder
-CUSTOM_CSS = 'static/solarized-dark.css'
+CUSTOM_CSS = 'extras/custom.css'
 
 TIMEZONE = 'Europe/Brussels'
 DEFAULT_LANG = u'en'
@@ -52,7 +50,7 @@ SITEDESCRIPTION = u'%s\'s Thoughts and Writings' % AUTHOR
 SITELOGO = u'//en.gravatar.com/userimage/33572940/d1226e18865ebdb31edc84661c5abaa3.jpeg'
 FAVICON = SITEURL + '/images/favicon.ico'
 BROWSER_COLOR = '#333333'
-PYGMENTS_STYLE = 'paraiso-dark'
+PYGMENTS_STYLE = 'native'
 
 USE_FOLDER_AS_CATEGORY = True
 MAIN_MENU = True
