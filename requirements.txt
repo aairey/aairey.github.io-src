@@ -1,4 +1,4 @@
-beautifulsoup4==4.10.0
+beautifulsoup4==4.12.3
 disqus-python==0.4.2
 ghp-import==0.6.0
 Markdown==2.6.11
